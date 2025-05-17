@@ -42,7 +42,12 @@ Watch the demonstration video:
     cd Pre-Commit-AI-Code-Review-Plugin
     ```
 
-3. **Build the plugin** (instructions may vary based on the build system).
+3. **Run the plugin** (instructions may vary based on the build system) with:
+   ```
+   gradle runIde.
+   ```
+> [!NOTE]
+> > Switch to new UI and rerun plugin of first run.   
 
 ---
 

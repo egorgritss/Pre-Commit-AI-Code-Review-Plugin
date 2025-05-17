@@ -1,0 +1,45 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>my.plugin.demo</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Demo</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="donotdisturb@nojetbrains.com" url="https://www.notjetbrains.com">NotJetBrains</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description>Proof of concept of AI pre commit code review</description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>Git4Idea</depends>
+
+
+
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij"/>
+
+    <extensionPoints>
+        <extensionPoint name="contextLoader" interface="my.plugin.demo.ai.interfaces.ContextLoader"/>
+    </extensionPoints>
+
+    <extensions defaultExtensionNs="my.plugin.demo">
+        <contextLoader implementation="my.plugin.demo.ai.services.OpenFilesContextLoader"/>
+    </extensions>
+
+    <actions>
+        <action id="my.plugin.demo.actions.PerformAiCodeReview" class="my.plugin.demo.actions.PerformAiCodeReview"
+                text="Perform AI Code Review" description="Starts AI code review." icon="AllIcons.Actions.EnableNewUi">
+            <add-to-group group-id="ChangesView.CommitToolbar" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

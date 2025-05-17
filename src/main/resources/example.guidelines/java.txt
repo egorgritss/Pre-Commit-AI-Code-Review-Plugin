@@ -1,0 +1,7 @@
+.java internal guidelines:
+These guidelines should be applied to .java Java files
+.java Java guideline 1. Follow Java Naming and Formatting Conventions. Ensure all classes, methods, variables, and constants use standard Java naming (PascalCase for classes, camelCase for methods and variables, UPPER_CASE for constants) and consistent formatting (indentation, brackets, and spacing) for readability and maintainability
+.java Java guideline 2. Check Code Structure and Modularity. Verify that code is broken into small, focused methods and classes that follow the Single Responsibility Principle. Each unit should do one thing well, and code should be organized logically into packages and modules
+.java Java guideline 3. Review for Correctness and Robustness. Confirm that the code meets requirements, handles edge cases, and avoids common pitfalls such as NullPointerException. Check for proper input validation, error handling, and use of exceptions with meaningful messages
+.java Java guideline 4. Promote Clean, Efficient, and Idiomatic Java. Encourage the use of modern Java features (lambdas, streams, Optional) where appropriate, avoid unnecessary object creation, and use the right data structures for the task. Remove redundant code and ensure no debug or leftover code remains
+.java Java guideline 5. Ensure Adequate Documentation and Comments. Check that public APIs, classes, and complex logic are well-documented with Javadoc or meaningful comments. Avoid redundant or obvious comments, but clarify intent where the logic is non-trivial.

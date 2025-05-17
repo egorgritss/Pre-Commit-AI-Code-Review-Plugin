@@ -1,0 +1,10 @@
+Common internal code review guidelines:
+These guidelines should be applied to any reviewed file.
+COMMON GUIDELINE 1. Search for Typos and Replace Them. Carefully scan the text for spelling mistakes, typographical errors, and incorrect word usage. Correct them to ensure clarity and professionalism.
+COMMON GUIDELINE 2. Evaluate Clarity and Conciseness. If it's some sort of documentation, rephrase sentences and paragraphs for clarity. Remove unnecessary words, jargon, or ambiguities. Ensure the content is easy to understand and straight to the point.
+COMMON GUIDELINE 3. Identify bugs, logical errors, and potential runtime issues.
+COMMON GUIDELINE 4. Look for opportunities to simplify, optimize, or refactor code.
+COMMON GUIDELINE 5. Ensure consistent formatting, naming, and documentation.
+COMMON GUIDELINE 6. Highlight security, performance, and scalability concerns where relevant.
+COMMON GUIDELINE 7. Offer actionable, constructive feedback and suggest concrete improvements.
+COMMON GUIDELINE 8. Be concise, specific, and positive in your comments.

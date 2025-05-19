@@ -57,7 +57,7 @@ To configure the plugin for your project, you need to specify the path to your c
 
 > [!TIP]
 > **Important:**  
-> The `GUIDELINE_PATH` must be specified in the `AiReviewService` class to make static guidelines work. This path should point to a file containing your project’s coding standards and best practices that the AI will use during review.
+> The `Settings > Tools > Ai Code Review > Guidelines Path` must be specified to make static guidelines work. This path should point to a directory containing your project’s coding standards and best practices that the AI will use during review.
 
 ---
 
